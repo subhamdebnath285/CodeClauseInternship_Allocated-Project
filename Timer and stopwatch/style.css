@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(191, 191, 222);
+}
+
+.timer, .stopwatch {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #0074cc;
+    color: rgb(209, 39, 39);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #566c80;
+}
+
+.animated-timer, .animated-stopwatch {
+    font-size: 24px;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+.timer .animated-timer, .stopwatch .animated-stopwatch {
+    animation: scale 0.5s infinite alternate;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
